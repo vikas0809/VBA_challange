@@ -21,12 +21,12 @@ The screenshots tells all the difference in runtime.The refactor code runs signi
 The basic of any coding practice is to make code runs efficiently,generates good quality of code,saves time,easy to understand etc.
 
 We did some research online on our basic to figure out major things which impacts the code performance.
-One of the thing is to look for to is to avoid the data update cycle.</br>In module 2 code,the cells values are updating after during every iteration of the loop.</br>
+One of the thing is to look for to is to avoid the data update cycle.</br>In module 2 code,the cells values are updating after during every iteration of the loop.This mean switching between data(2017 or 2018) and analysis sheet every time .This happens for n times where n is number of data rows in a sheet.</br>
 
 ![module2Code](Resources/module2code.png)
 
 
-To avoid that,we needed something to store the values locally and trasferring to cells in stock analysis sheet in on go.</br>For that we created arrays to store values.
+To avoid that and make code run faster,we needed something to store the values locally and trasferring to cells in stock analysis sheet in on go.</br>For that we created arrays to store values.
 
 *tickerTotalVolume()
 
@@ -41,7 +41,9 @@ The size of these arrays are same as the size of ticker array i.e 12.</br>We set
 ![initializingArrays](Resources/resettingArrays.png)
 
 All the values related to each ticker in ticker array is stored at same index in tickerTotalVolume,tickerStartingPrice and tickerEndingPrice arrays.
-After getting all the values in arrays,we activate our "All Stocks Analysis" worksheet and transfer all the values to the respective cells.We did that using for loop from 0 to 11 i.e size of array and transferred data to cells.redacored
+After getting all the values in arrays,we activate our "All Stocks Analysis" worksheet and transfer all the values to the respective cells.We did that using for loop from 0 to 11 i.e size of array and transferred data to cells.</br>
+
+In this code,we worked on data sheet and stored the values in arrays.Next step is to switching to analysis sheet and transfer our data.Note in this case,we are only switchinng once to do trasnfer analysis data to cells.So,we saved n-1 time of steps our system has to go through in Module 2 .This is where we save our run-time.
 
 ![dataTrasferfromArray](Resources/refactoredCode.png)
 
