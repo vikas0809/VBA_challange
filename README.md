@@ -8,13 +8,13 @@ We are working on stock analysis project for Steve,helping him analyse the stock
 # Results
 The screenshots tells all the difference in runtime.The refactor code runs significantly faster than our code done in module 2.
 
---This is the time withour refactoring
-![allstockanalysisruntime](Resources/module2Runtime.png)
+--This is the time withour refactoring for year 2018
+![allstockanalysisruntime](Resources/module2Runtime2018.png)
 
 
--- This one is after refactoring the same code
+-- This one is after refactoring the same code for year 2018
 
-![refactoredcoderuntime](Resources/refactoredCodeRuntime.png)
+![refactoredcoderuntime](Resources/VBA_Challange_2018.png)
 
 
 # Refactor process Summary
