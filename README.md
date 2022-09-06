@@ -1,8 +1,16 @@
 # VBA_challange
-Challange work done to make the modules run faster than before by refractoring the code
+Challange work done to make the modules run faster than before by refractoring the code.</br>
+
+Macro-Enabled worksheet for this challange : [Green-stocks](VBA_Challange.xlsm)
+
 
 # Overview
-We are working on stock analysis project for Steve,helping him analyse the stocks he traded in last two tears i.e 2017 and 2018 for his parents.</br>While working on the analysis,steve wanted to analyse data by click of button.We created macro which does the analysis of all stocks for a particular year which is input by the user,Steve.This whole work was done in our Module 2 of this stock analysis project.</br>In this challange assignment,we will doing some refactor operation on our code to make it run faster.To check the performace of our code,we will be using timer to record the execution time of our code.
+We are working on stock analysis project for Steve,helping him analyse the stocks he traded in last two tears i.e 2017 and 2018 for his parents.While working on the analysis,steve wanted to analyse data by click of button.We created macro which does the analysis of all stocks for a particular year which is input by the user,Steve.This whole work was done in our Module 2 of this stock analysis project.
+
+![2017](Resources/2017.png)
+![2018](Resources/2018.png)
+
+In this challange assignment,we will doing some refactor operation on our code to make it run faster.To check the performace of our code,we will be using timer to record the execution time of our code.
 
 
 # Results
@@ -43,7 +51,7 @@ The size of these arrays are same as the size of ticker array i.e 12.</br>We set
 All the values related to each ticker in ticker array is stored at same index in tickerTotalVolume,tickerStartingPrice and tickerEndingPrice arrays.
 After getting all the values in arrays,we activate our "All Stocks Analysis" worksheet and transfer all the values to the respective cells.We did that using for loop from 0 to 11 i.e size of array and transferred data to cells.</br>
 
-In this code,we worked on data sheet and stored the values in arrays.Next step is to switching to analysis sheet and transfer our data.Note in this case,we are only switchinng once to do trasnfer analysis data to cells.So,we saved n-1 time of steps our system has to go through in Module 2 .This is where we save our run-time.
+In this code,we worked on data sheet and stored the values in arrays.Next step is to switching to analysis sheet and transfer our data.Note in this case,we are only switchinng once to do trasnfer analysis data to cells.So,we saved n-1 time of steps our system has to go through in Module 2 .This is where we save our run-time,where n is number of data rows in a particular sheet.
 
 ![dataTrasferfromArray](Resources/refactoredCode.png)
 
