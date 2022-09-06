@@ -22,6 +22,10 @@ The basic of any coding practice is to make code runs efficiently,generates good
 
 We did some research online on our basic to figure out major things which impacts the code performance.
 One of the thing is to look for to is to avoid the data update cycle.</br>In module 2 code,the cells values are updating after during every iteration of the loop.</br>
+
+![module2Code](Resources/module2code.png)
+
+
 To avoid that,we needed something to store the values locally and trasferring to cells in stock analysis sheet in on go.</br>For that we created arrays to store values.
 
 *tickerTotalVolume()
@@ -37,9 +41,9 @@ The size of these arrays are same as the size of ticker array i.e 12.</br>We set
 ![initializingArrays](Resources/resettingArrays.png)
 
 All the values related to each ticker in ticker array is stored at same index in tickerTotalVolume,tickerStartingPrice and tickerEndingPrice arrays.
-After getting all the values in arrays,we activate our "All Stocks Analysis" worksheet and transfer all the values to the respective cells.We did that using for loop from 0 to 11 i.e size of array and transferred data to cells.
+After getting all the values in arrays,we activate our "All Stocks Analysis" worksheet and transfer all the values to the respective cells.We did that using for loop from 0 to 11 i.e size of array and transferred data to cells.redacored
 
-![dataTrasferfromArray](Resources/dataTransferFromArrays.png)
+![dataTrasferfromArray](Resources/refactoredCode.png)
 
 ## Advantages
 
