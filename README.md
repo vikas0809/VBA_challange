@@ -7,8 +7,10 @@ Macro-Enabled worksheet for this challange : [Green-stocks](VBA_Challange.xlsm)
 # Overview
 We are working on stock analysis project for Steve,helping him analyse the stocks he traded in last two tears i.e 2017 and 2018 for his parents.While working on the analysis,steve wanted to analyse data by click of button.We created macro which does the analysis of all stocks for a particular year which is input by the user,Steve.This whole work was done in our Module 2 of this stock analysis project.
 
-![2017](Resources/2017.png)
-![2018](Resources/2018.png)
+![2017](Resources/2017a.png)
+
+
+![2018](Resources/2018a.png)
 
 In this challange assignment,we will doing some refactor operation on our code to make it run faster.To check the performace of our code,we will be using timer to record the execution time of our code.
 
